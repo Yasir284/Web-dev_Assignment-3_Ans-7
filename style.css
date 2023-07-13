@@ -1,0 +1,40 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  background-color: #fff;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  margin: 0%;
+}
+
+.images-container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.images-container img {
+  box-shadow: 1px 2px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: contain;
+  transition: all ease-in-out 0.3s;
+}
+
+.images-container img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 700px) {
+  .images-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
